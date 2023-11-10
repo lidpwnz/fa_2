@@ -14,5 +14,3 @@ RUN poetry config virtualenvs.create false \
 
 # Копируем остальные файлы проекта
 COPY . .
-
-RUN ls && ls src
