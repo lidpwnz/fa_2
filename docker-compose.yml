@@ -4,6 +4,8 @@ services:
   app:
     build: 
       context: .
+    environment:
+      - database_url=postgres://postgres:postgres@postgres:5432/postgres
     ports:
       - "1026:1026"
     volumes:
