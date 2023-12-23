@@ -1,0 +1,9 @@
+fastapi
+pydantic == "<2"
+uvicorn
+tortoise-orm[asyncpg]
+aerich
+python-multipart
+minio
+python-jose[cryptography]
+passlib[bcrypt]

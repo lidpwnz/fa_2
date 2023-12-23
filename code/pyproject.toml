@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "1"
+version = "0.1.0"
+description = ""
+authors = ["davidlee <lidpwnz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+tortoise-orm = {extras = ["asyncpg"], version = "^0.20.0"}
+aerich = "^0.7.2"
+python-multipart = "^0.0.6"
+minio = "^7.2.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+
+[tool.aerich]
+tortoise_orm = "db.conf.TORTOISE_ORM"
+location = "../migrations"
+src_folder = "./."
